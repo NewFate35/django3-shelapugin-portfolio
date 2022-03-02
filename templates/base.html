@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+  {% block head %} {% endblock %}
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+      {% block navbar %} {% endblock %}
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  {% block hero %} {% endblock %}
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    {% block about %} {% endblock %}
+
+    <!-- ======= Facts Section ======= -->
+    {% block facts %} {% endblock %}
+
+    <!-- ======= Skills Section ======= -->
+    {% block skills %} {% endblock %}
+
+    <!-- ======= Resume Section ======= -->
+    {% block resume %} {% endblock %}
+
+    <!-- ======= Portfolio Section ======= -->
+    {% block portfolio %} {% endblock %}
+
+    <!-- ======= Services Section ======= -->
+    {% block services %} {% endblock %}
+
+    {% block bid %}{% endblock %}
+
+    <!-- ======= Testimonials Section ======= -->
+    {% block testimonials %} {% endblock %}
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% block footer %} {% endblock %}
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  {% block scripts %} {% endblock %}
+
+</body>
+
+</html>
