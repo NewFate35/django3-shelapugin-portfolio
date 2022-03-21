@@ -10,8 +10,8 @@ def home(request):
     return render(request, 'landing/index.html', {'form': form})
 
 
-def detail(request):
-    return render(request, 'landing/portfolio-details2.html')
+# def detail(request):
+#     return render(request, 'landing/portfolio-details2.html')
 
 
 def thanks_page(request):
@@ -27,3 +27,7 @@ def thanks_page(request):
     element.save()
     sendTelegram(tg_name=name, tg_phone=phone, tg_choice=choice)
     return render(request, './thanks_page.html', dictionary)
+
+
+def portfolio_details(request):
+    return render(request, './portfolio-details.html')

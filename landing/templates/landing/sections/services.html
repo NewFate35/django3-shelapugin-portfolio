@@ -3,135 +3,136 @@
 <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-* {
-box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
 
-.text-center {
-text-align: center;
-}
+    .text-center {
+        text-align: center;
+    }
 
-.pricing-box-container {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-}
+    .pricing-box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.pricing-box {
-background-color: #ffffff;
-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
-border-radius: 4px;
-flex: 1;
-padding: 0 30px 30px;
-margin: 2%;
-min-width: 250px;
-max-width: 350px;
-}
+    .pricing-box {
+        background-color: #ffffff;
+        background-image: url(https://kartinkin.net/uploads/posts/2020-11/1606688361_31-p-fon-dlya-prezentatsii-geometriya-46.png);
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        flex: 1;
+        padding: 0 30px 30px;
+        margin: 2%;
+        min-width: 250px;
+        max-width: 350px;
+    }
 
-.pricing-box h5 {
-text-transform: uppercase;
-}
+    .pricing-box h5 {
+        text-transform: uppercase;
+    }
 
-.price {
-margin: 24px 0;
-font-size: 36px;
-font-weight: 900;
-}
+    .price {
+        margin: 24px 0;
+        font-size: 36px;
+        font-weight: 900;
+    }
 
-.price sub, .price sup {
-font-size: 16px;
-font-weight: 100;
-}
+    .price sub, .price sup {
+        font-size: 16px;
+        font-weight: 100;
+    }
 
-.features-list {
-padding: 0;
-list-style-type: none;
-}
+    .features-list {
+        padding: 0;
+        list-style-type: none;
+    }
 
-.features-list li {
-font-weight: 100;
-padding: 12px 0;
-font-weight: 100;
-}
+    .features-list li {
+        font-weight: 100;
+        padding: 12px 0;
+        font-weight: 100;
+    }
 
-.features-list li:not(:last-of-type) {
-border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+    .features-list li:not(:last-of-type) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
 
-/*.btn-primary {*/
-/*border-radius: 25px;*/
-/*border: none;*/
-/*background-color: #EC1362;*/
-/*color: #ffffff;*/
-/*cursor: pointer;*/
-/*padding: 10px 15px;*/
-/*margin-top: 20px;*/
-/*text-transform: uppercase;*/
-/*transition: all 0.1s ease-in-out;*/
-/*}*/
+    .btn-primary {
+    border-radius: 25px;
+    border: none;
 
-.btn-primary:hover {
-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
-transform: translateY(-3px);
-}
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    }
 
-.pricing-box-bg-image {
-background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613716514_26-p-stilnii-fon-dlya-prezentatsii-29.jpg);
-background-size: cover;
-background-position: center center;
-color: #ffffff;
-}
+    .btn-primary:hover {
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+    }
 
-.pricing-box-bg-image .features-list li {
-border-bottom-color: rgba(255, 255, 255, 1);
-}
+    .pricing-box-bg-image {
+        background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613716514_26-p-stilnii-fon-dlya-prezentatsii-29.jpg);
+        background-size: cover;
+        background-position: center center;
+        color: #ffffff;
+    }
 
-.pricing-box-bg-image .btn-primary {
-background-color: #ffffff;
-color: #000;
-}
+    .pricing-box-bg-image .features-list li {
+        border-bottom-color: rgba(255, 255, 255, 1);
+    }
+
+    .pricing-box-bg-image .btn-primary {
+        background-color: #ffffff;
+        color: #000;
+    }
 
 </style>
 
 <section id="services" class="services">
-            <div class="section-title">
-            <h2>Услуги</h2>
-        </div>
+    <div class="section-title">
+        <h2>Услуги</h2>
+    </div>
     <div class="pricing-box-container">
         <div class="pricing-box text-center">
             <h5 class="mt-2">Тариф Online</h5>
-            <p class="price">6000<sup>Р.</sup><sub>/месяц</sub></p>
+            <p class="price">6000<sup>Р.</sup></p>
             <ul class="features-list">
                 <li>Прописанный план с учетом ваших пожеланий на неделю вперёд</li>
                 <li>Оперативная корректировка плана исходя из жизненных ситуаций</li>
                 <li>Обратная связь один раз в неделю любым способом;(звонок, социальные сети)</li>
             </ul>
-            <button class="btn btn-primary">Записаться</button>
+            <a href="#bid" class="btn btn-primary">Записаться</a>
         </div>
 
         <div class="pricing-box pricing-box-bg-image text-center">
             <h5 class="mt-2">Тариф "Персональный тренер"</h5>
-            <p class="price">2000<sup>Р.</sup><sub>/месяц</sub></p>
+            <p class="price">2000<sup>Р.</sup></p>
             <ul class="features-list">
                 <li>Офлайн встреча и персональная тренировка</li>
                 <li>Подготовка к соревнованиям, исходя из желаемых целей клиента</li>
                 <li>Обратная связь один раз в неделю любым способом;(звонок, социальные сети)</li>
             </ul>
-            <button class="btn btn-primary">Записаться</button>
+            <a href="#bid" class="btn btn-primary">Записаться</a>
         </div>
 
         <div class="pricing-box text-center">
             <h5 class="mt-2">Тариф "Группа"</h5>
-            <p class="price">700<sup>Р.</sup><sub>/месяц</sub></p>
+            <p class="price">700<sup>Р.</sup></p>
             <ul class="features-list">
                 <li>Еженедельные тренировки в группе</li>
                 <li>Офлайн встречи</li>
                 <li>Корреиктировка техники бега</li>
                 <li>Развитие скорости и выносливости спортсмена</li>
             </ul>
-            <button class="btn btn-primary">Записаться</button>
+            <a href="#bid" class="btn btn-primary">Записаться</a>
         </div>
     </div>
 
