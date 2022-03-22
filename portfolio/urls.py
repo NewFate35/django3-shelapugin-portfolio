@@ -22,7 +22,8 @@ from landing import views
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
-                  path('', views.home),
+                  path('', views.home, name='home'),
                   path('thanks/', views.thanks_page, name='thanks_page'),
                   path('portfolio-details/', views.portfolio_details, name='portfolio-details'),
+                  path('portfolio-details2/', views.portfolio_details2, name='portfolio-details2'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

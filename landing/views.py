@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 from crm.forms import OrderForm
-from telebot.send_message import sendTelegram
 from crm.models import Order
+from telebot.send_message import sendTelegram
 
 
 def home(request):
@@ -10,8 +10,12 @@ def home(request):
     return render(request, 'landing/index.html', {'form': form})
 
 
-# def detail(request):
-#     return render(request, 'landing/portfolio-details2.html')
+def portfolio_details(request):
+    return render(request, './portfolio-details.html')
+
+
+def portfolio_details2(request):
+    return render(request, './portfolio-details2.html')
 
 
 def thanks_page(request):
@@ -29,5 +33,3 @@ def thanks_page(request):
     return render(request, './thanks_page.html', dictionary)
 
 
-def portfolio_details(request):
-    return render(request, './portfolio-details.html')
