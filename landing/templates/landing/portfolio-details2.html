@@ -1,57 +1,58 @@
-{% extends 'base.html' %}
+{% load static %}
 
 <!--Содержание <head>-->
 {% block head %}
 {% include 'inc/head.html' %}
 {% endblock %}
 
-<!--Меню-->
-{% block navbar %}
-{% include 'inc/navbar.html' %}
-{% endblock %}
 
-<!--Начальное фото с текстом-->
-{% block hero %}
-{% include 'sections/hero.html' %}
-{% endblock %}
-
-<!--Обо мне-->
-{% block about %}
-{% include 'sections/about-me.html' %}
-{% endblock %}
-
-<!--Факты-->
-{% block facts %}
-{% include 'sections/facts.html' %}
-{% endblock %}
-
-<!--Навыки-->
-{% block skills %}
-{% endblock %}
-
-<!--Опыт работы-->
-{% block resume %}
-{% include 'sections/resume.html' %}
-{% endblock %}
-
-<!--Достижения-->
 {% block portfolio %}
-{% include 'sections/portfolio.html' %}
-{% endblock %}
 
-<!--Услуги-->
-{% block services %}
-{% include 'sections/services.html' %}
-{% endblock %}
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
 
-<!--Заявка-->
-{% block bid %}
-{% include 'sections/bid.html' %}
-{% endblock %}
+        <div class="row gy-4">
 
-<!--Партнеры-->
-{% block testimonials %}
-{% include 'sections/testimonials.html' %}
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'img/portfolio/polar-1.jpg' %}" style="display: block;" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'img/portfolio/polar-2.jpg' %}" style="display: block;" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>Полярный забег</h3>
+                    <ul>
+                        <li><strong>Категория</strong>: Ультратрейл</li>
+                        <li><strong>Место проведения</strong>: ?</li>
+                        <li><strong>Дата проведения</strong>: ноябрь 2021</li>
+                        <li><strong>Сайт соревнования</strong>: <a href="#" target="_blank">?</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-description">
+                    <h2>Отчет</h2>
+                    <p>
+                        "Детали прохождения соревнования"
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Details Section -->
 {% endblock %}
 
 <!--Футер-->
@@ -63,4 +64,3 @@
 {% block scripts %}
 {% include 'inc/scripts.html' %}
 {% endblock %}
-

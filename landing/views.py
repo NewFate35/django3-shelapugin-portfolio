@@ -18,6 +18,22 @@ def portfolio_details2(request):
     return render(request, './portfolio-details2.html')
 
 
+def portfolio_details3(request):
+    return render(request, './portfolio-details3.html')
+
+
+def portfolio_details4(request):
+    return render(request, './portfolio-details4.html')
+
+
+def portfolio_details5(request):
+    return render(request, './portfolio-details5.html')
+
+
+def portfolio_details6(request):
+    return render(request, './portfolio-details6.html')
+
+
 def thanks_page(request):
     name = request.POST['name']
     phone = request.POST['phone']

@@ -1,0 +1,79 @@
+{% load static %}
+
+<!--Содержание <head>-->
+{% block head %}
+{% include 'inc/head.html' %}
+{% endblock %}
+
+
+{% block portfolio %}
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'img/portfolio/triathlon-1.jpg' %}"
+                                 alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'img/portfolio/triathlon-2.jpg' %}"
+                                 alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'img/portfolio/triathlon-3.jpg' %}"
+                                 alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'img/portfolio/triathlon-4.jpg' %}"
+                                 alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>Триатлон Сочи</h3>
+                    <ul>
+                        <li><strong>Категория</strong>: Триатлон</li>
+                        <li><strong>Место проведения</strong>: Сочи</li>
+                        <li><strong>Дата проведения</strong>: октябрь 2021</li>
+                        <li><strong>Сайт соревнования</strong>: <a href="https://iron-star.com/results/ironstar-226-sochi-2021/about/" target="_blank">www.iron-star.com</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-description">
+                    <h2>Отчет</h2>
+                    <p>
+                        "Детали прохождения соревнования"
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Details Section -->
+{% endblock %}
+
+<!--Футер-->
+{% block footer %}
+{% include 'inc/footer.html' %}
+{% endblock %}
+
+<!--Скрипты-->
+{% block scripts %}
+{% include 'inc/scripts.html' %}
+{% endblock %}
