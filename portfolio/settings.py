@@ -141,4 +141,4 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 try:
     from .local_settings import *
 except ImportError:
-    print('Выглядит так, буд-то нет локального файла настроек. Ты на сайте продакшена')
+    print('Ты на сайте продакшена :)')
